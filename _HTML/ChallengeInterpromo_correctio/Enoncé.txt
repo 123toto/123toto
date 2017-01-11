@@ -1,0 +1,2 @@
+Créer un CSS et une page HTML responsive fidèle aux images fournies.
+Pour vous aider, utilisez grid.css sans modifier pour le redu Responsive.

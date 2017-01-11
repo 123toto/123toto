@@ -1,0 +1,291 @@
+@font-face {
+	font-family: "Facebook Logo Police";
+	src: url("file:///C:/-%20simplon/Exercices%20-%20Challenges/-%20HTML/FaceBook/workspace/facebook_letter_faces/FACEBOLF.otf");
+}
+@@font-face {
+	font-family: "Helvetica Neue";
+	src:url("file:///C:/-%20simplon/Exercices%20-%20Challenges/-%20HTML/FaceBook/workspace/facebook_letter_faces/HelveticaNeueLTStd.otf");
+}
+
+body {
+	position: relative;
+	width :1349px;
+	height:906px;
+	margin : 0;
+}
+div {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.header {
+	background-image:linear-gradient(#4E69A2, #3B5998 50%);
+	height: 83px;
+}
+	.barre_de_menu {
+		/*background-color: red;*/
+		position :absolute;
+		width: 980px;
+		height: 65px;
+		margin : 0 184.5px auto 184.5px;
+		padding-top: 13px;
+	}
+	.logo_fb {
+		position: absolute;
+		width: 170px;
+		height: 55px;
+	}
+	a.nounderline {
+		position: absolute;
+		font-family: "Facebook Logo Police";
+		text-decoration: none;
+		color : white;
+		font-style: normal;
+		font-weight: ligther;
+		font-size: 42px;
+		letter-spacing: 1px;
+	}
+	.logo_fb {
+		position: absolute;
+		margin : 0;
+		bottom: 0px;
+	}
+	.sign_in {
+		position : absolute;
+		right :0;
+		height: 65px;
+		width: 454px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size :12px;
+		color : white;
+		line-height: 16,08px;
+
+	}
+	.inputtext_signin{
+		width: 142px;
+		height: 14px;
+		border-color: black;
+		border-width: 1px;
+		padding: 3px;
+		padding-bottom: 4px;
+	}
+	.inputtext_connexion {
+		background-color: #4267b2;
+		line-height: 18px;
+		padding: 2px 6px;
+		border-color: #29487D;
+		border-width: 1px;
+		border-style: solid;
+		border-radius: 2px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		color : #ffffff;
+		cursor: pointer;
+	}
+	.inputtext_connexion:hover  {
+		background-color: #365899;
+	}
+	.inscription_col1 {
+		width: 150px;
+		padding-left: 14px;
+	}
+	.inscription_col2 {
+		width: 187px;
+		padding-left: 14px;
+	}
+	.inscription_col3 {
+		width: 75px;
+	}
+	.inscription_col23{
+		padding-left: 14px;
+		padding-top: 4px;
+	}
+	.inscription_ligne1{
+		width:454px;
+		height: 21px;
+		padding-bottom: 4px;
+	}
+	.inscription_ligne2{
+		width:454px;
+		height: 24px;
+	}
+	.inscription_ligne3{
+		width:454px;
+		height: 20px;
+		padding-top: 4px;
+	}
+	a.infos_oubliees {
+		text-decoration: none;
+		color: #9cb4d8;
+	}
+	a:hover.infos_oubliees {
+		text-decoration: underline;
+	}
+
+.main {
+	background-image:linear-gradient(#FFFFFF, #D3D8E8);
+	height: 684px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+	.main_contenu {
+		position: relative;
+		left : 184.5px;
+		width : 980px;
+		height : 684px;
+	}
+	.inscription {
+		float: right;
+		width : 400px;
+		height: auto;
+
+	}
+	.titre_inscription{
+			padding-top: 24px;
+			font-size: 36px;
+			font-weight: bold;
+			color:#333;
+			padding-bottom: 10px;
+		}
+	.gratuit {
+			font-size: 19px;
+			font-weight: normal;
+			color: #333;
+			padding-bottom: 21px;
+
+		}
+	.inputtext_moyen {
+			width: 172px;
+			height: 21px;
+			font-size : 18px;
+			border-radius: 5px;
+			border-width: 1px;
+			border-color: #bdc7d8;
+			padding: 8px 10px 8px 10px;
+			border-style: solid;
+			margin-bottom: 12px;
+		}
+	.inputtext_grand {
+			width: 377px;
+			height: 21px;
+			font-size : 18px;
+			border-radius: 5px;
+			border-width: 1px;
+			border-color: #bdc7d8;
+			padding: 8px 10px 8px 10px;
+			border-style: solid;
+			margin-top: 10px;
+		}
+	.selecteur_date {
+			position: relative;
+			width:400px;
+			height:59px;
+			margin-top: 25px;
+		}
+		.date_naissance {
+			font-size: 18px;
+			margin-bottom: 5px;
+		}
+		.dateur {
+			float: left;
+			width:200px;
+			height: 38px;
+		}
+		.pourquoi_date {
+			float:right;
+			width:150px;
+			height: 28px;
+			font-size: 11px;
+			margin-right: 43px;
+			margin-top: 3px;
+		}
+		.pourquoi_date a {
+			color: #365899;
+			line-height: 14.74px;
+			text-decoration: none;
+		}
+		.pourquoi_date a:hover {
+			text-decoration: underline;
+		}
+	.homme_femme {
+		color :#1d2129;
+		font-size: 18px;
+		width: 204px;
+		height:32px;
+		float: left;
+		margin-top: 12px;
+		margin-left: 5px;
+	}
+	.conditions {
+		clear: both;
+		color:#777;
+		font-size : 11px;
+		width: 316px;
+		height: 70px;
+		line-height: 14.74px;
+	}
+	.conditions a {
+		color:#365899;
+		text-decoration: none;
+	}
+	.conditions a:hover {
+		text-decoration: underline;
+	}
+	.bouton_inscription {
+		background-color: #69A74E;
+		background-image:linear-gradient(#67ae55, #578843);
+		color: #FFFFFF;
+		border-radius: 5px;
+		border-style: solid;
+		font-size: 19px;
+		margin-top: 23px;
+		padding: 8px 48px;
+		font-weight: bold;
+		border-color: #3b6e22 #3b6e22 #2c5115;
+		border-width: 1px;
+		letter-spacing: normal;
+	}
+	.creer_page {
+		color:#666;
+		font-size: 13px;
+		font-weight: bold;
+		margin-top: 37px;
+	}
+	.creer_page a {
+		color:#365899;
+		text-decoration: none;
+	}
+	.creer_page a:hover {
+		text-decoration: underline;
+	}
+
+	.restez_en_contact {
+		position : absolute;
+		left :0px;
+		width : 565px;
+		color: #0e385f;
+		font-weight : bold;
+		font-size: 20px;
+		line-height: 29px;
+		word-spacing: -1px;
+	}
+		.description_carte {
+			position: absolute;
+			margin-top: 40px;
+			width:450px
+		}
+		.carte {
+			position: absolute;
+			margin-top: 98px;
+		}
+.footer {
+    background-color: white;
+    height: 139px;
+}
+
+.test_OK {
+	width :50%;
+	heigh :50%;
+	font-size : 48px;
+	text-align: center;
+}
