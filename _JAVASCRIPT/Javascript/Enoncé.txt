@@ -1,0 +1,13 @@
+En utilisant la console pour le rendu :
+
+ - Fonction listant la suite de Fibonacci (1, 2, 3, 5, 8, 13,...) soit n3 = n2 + n1
+ - Fonction permettant de calculer si une année est bissextile sachant qu'une année bissextile est multiple de 4 si pas multiple de 100 sauf quand multiple de 400.
+ - Fonction FizzBuzz pour afficher soit fizz si multiple de 3, buzz si multiple de 5 ou fizzbuzz si multiple de 3 et de 5.
+ - Fonction permettant de sortir les nombres premiers
+ - Programme générant un nombre aléatoire entre 1 et 9) à deviner en indiquant trop haut ou trop bas ou trouvé à chaque essai.
+ - Faire une boucle dessinant un triangle avec une lettre 
+	x
+	xx
+	xxx
+	xxxx
+	xxxxx
