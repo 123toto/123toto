@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button</p>
+<p> Retrouve le chiffre choisi par l'ordi compris entre 0 et 10</p>
+<p>Tu as 5 essais pour y parvenir</p>
+
+<button onclick="Jeu()">Clique pour jouer au jeu le plus fun du monde !!!! </button>
+
+<script>
+function Jeu() {
+ 	var chiffreOrdi = Math.round (Math.random()*10);                        // chiffreOrdi est un nombre aléatoire entre 0 et 10
+    var nbreEssai = 5;	                                                    
+    while ( monChiffre != chiffreOrdi  ) {                                  // Tant que chiffre tapé est différent du chiffre généré aléatoirement alors
+        while (nbreEssai > 0) {                                             // tant que nombre essai supérieur a 0
+        var monChiffre = prompt("Devine le chiffre", "xxx");                // Demande le chiffre au joueur
+            if (monChiffre < chiffreOrdi) {                                 // Si chiffre du joueur plus petit 
+                alert ("Non, tu es en dessous");                                // affiche (...)
+                nbreEssai -= 1;                                                 // enleve 1 au nbreEssai
+            } 
+            else if (monChiffre > chiffreOrdi) {                            // Si chiffre du joueur plus petit
+                alert ("Non, tu es au dessus");                                    // affiche (...)
+                nbreEssai -= 1;                                                    // enleve 1 au nbreEssai
+            }
+            else {                                                          // Sinon (condition nbreEssai sup a 0 rempli)
+                alert ("Tu as gagné !!");                                           // affiche
+                return;                                                             // sort de la boucle
+            }
+        }
+        alert ("Tu as perdu !!!");                                          // alert () quand nbreEssai vaut 0 
+        return;                                                             // et sort de la boucle
+    } 
+}
+</script>
+</body>
+</html>
