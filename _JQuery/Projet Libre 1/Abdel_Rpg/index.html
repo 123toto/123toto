@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">
+    <title>MyRpg</title>
+</head>
+<body>
+    <audio src=http://www.ffmages.com/ffvii/ost/disc-1/10-let-the-battles-begin.mp3 autoplay loop></audio>
+    <header class="container">
+        <div class="row">      
+            <h1 class="col-sm-12">OSEF'S RPG</h1>   
+        </div>     
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 avatars">
+                <img id="avatarGentil"src="http://orig12.deviantart.net/0652/f/2014/110/2/4/warrior_girl_by_kenny1654-d7f83uv.png" alt="">
+            </div>
+            <div class="col-sm-6 interactions">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-sm-12 affichageLog">
+                             <p id="combatLogGentil">Tu as <span id="toucheRateGentil"></span> le monstre !</p>
+                             <p id="combatLogMechant">Le monstre t'a <span id="toucheRateMechant"></span> !</p>  
+                        </div>
+                    </div>
+               
+                </div>              
+            </div>
+            <div class="col-sm-3 centrer">
+                <img id="avatarMechant"src="http://www.rpglegion.com/ff6/monsters/atma.png" alt="">
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 variables">
+                <p id="variablesGentil">Points de Vie : <span>15</span></p>                
+            </div>
+            <div class="col-sm-6 interactions">
+                <div class="row">
+                    <div class="col-sm-12 centrer">
+                        <p id="turn">À ton tour !</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 centrer">
+                        <button class="btn" id="atk1">ATTAQUE PRECISE</button>
+                    </div>
+                     <div class="col-sm-2 centrer">
+                        <p>OU</p>
+                    </div>
+                     <div class="col-sm-5 centrer">
+                        <button class="btn" id="atk2">ATTAQUE PUISSANTE</button>
+                    </div>
+                </div>               
+            </div>
+            <div class="col-sm-3 variables">
+                <p id="variablesMechant">Points de Vie : <span>15</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="resultat">
+        <div class="row">
+            <div class="col-sm-12 centrer">
+                <h3>PERDU !</h3>
+            </div>      
+        </div> 
+    </div>
+
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script
+  src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    background: black;
+
+}
+    .row {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*border: 2px solid white;*/
+    }
+
+        h1 {
+            color: red;
+        }
+    div {      
+        color: white;  
+        /*border: 2px solid white;*/
+    }
+        button {
+            color: black;
+        }
+    .centrer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .interactions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .affichageLog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+  
+
+    

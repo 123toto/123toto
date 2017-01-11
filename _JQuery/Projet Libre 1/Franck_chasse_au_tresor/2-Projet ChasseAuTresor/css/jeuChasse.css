@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'fontpirate';
+    src: url('../font/pieces_of_eight-webfont.woff2') format('woff2'),
+         url('../font/pieces_of_eight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+}
+
+.coffreTresor {
+    width:200px;
+    height:150px;
+}
+
+.jeuTitle {
+    color: whitesmoke;
+    font-family: "fontpirate";
+    font-size: 75px;
+    text-align: center;
+}
+
+.image {
+    display:flex;
+    justify-content: center;
+}
+
+main {
+    background-color: #95a5a6;
+    background: url("../images/ile-pirate.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.gauche {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@media (max-width: 900px) {
+    .gauche {
+    flex-direction: row;
+  }
+}
+
+.points {
+    border: 5px solid black;
+    border-radius: 10px;
+    min-width: 80%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+@media (max-width: 900px) {
+    .points {
+    flex-direction: row;
+    min-width: 50px;
+  }
+}
+
+.compteur {
+    min-width: 80%;
+    min-height: 300px;
+    border: 5px solid green;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+@media (max-width: 900px) {
+    .compteur {
+    flex-direction: row;
+    min-width: 50px;
+  }
+}
+
+.droite {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@media (max-width: 900px) {
+    .droite {
+    min-width: 50px;
+  }
+}
+.motdepasse {
+    min-width: 80%;
+    min-height: 80vh;
+    background: url("../images/coffre-fort.jpg") no-repeat center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ligne {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 100px;
+}
+
+.btn-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    line-height: 1.428571429;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.afficheur {
+    border: 3px solid darkblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "fontpirate";
+}

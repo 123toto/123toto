@@ -1,0 +1,39 @@
+﻿/* Style par défaut de nos paragraphes
+(= état initial). */
+body {   
+    background-color: black;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(43, 173, 235);
+    text-decoration: underline;
+}
+span {
+    font-family: 'Henny Penny', arial, cursive;
+    font-size: 70px;
+    border: 1px solid black;
+}
+#jaune {
+    color: rgb(251, 249,13);
+}
+#orange {
+    color: rgb(255, 194,15);
+}
+#rouge {
+    color: rgb(255, 0, 0);
+}
+#violet {
+    color: rgb(133, 12, 139);
+}
+#bleuC {
+    color: rgb(43, 173, 235);
+}
+#bleuF {
+    color: rgb(33, 43, 217);
+}
+#vert {
+    color: rgb(0, 255, 0);
+}

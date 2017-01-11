@@ -1,0 +1,8 @@
+Codez dans le fichier script.js de sorte que :
+ - On saisie une tâche puis on clique sur Play, un timer décompte 25 min, la tâche est considérée terminée après décompte des 15 min.
+ - Si on clique sur Pause, le timer reste en pause et reprend si appuie sur Play.
+ - Si on clique sur Stop, la tâche est terminée.
+ - Si une tâche est terminée, on l'archive dans la lsite Done on déclenche le décompte d'une pause.
+	* La pause est de 5 min (ou 15 minute toutes les 4 tâches).
+ - Pendant une pause, on ne peut rien entreprendre.
+ - Après la pause, on peut resaisir une tâche.

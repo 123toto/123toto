@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny" rel="stylesheet">
+    <script src="js/canvas1.js"></script>
+    <script src="js/canvas2.js"></script>
+    <script src="js/script.js"></script>
+    <title>Saisie joueur 1</title>   
+</head>
+<body>
+    <div class="container">   
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-4">
+                <canvas id="canvas1" width="600" height="40"></canvas>
+            </div>
+            <div class="col-sm-3">
+                <form>
+                        <input type="text" id="j1" onchange="this.value=this.value.toUpperCase();" autofocus>              
+                </form>
+            </div>    
+            <div class="scol-sm-3">
+                    <input id="valider" type="button" value="Validez votre mot !">
+            </div>  
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-4">
+                <canvas id="canvas2" width="600" height="40"></canvas>
+            </div>
+            <div class="col-sm-offset-2 col-sm-3">
+                <article id="lettreBis">
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-2 col-sm-10">
+            <ul id="afficher" class="lettre">
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-5" id="manque">
+        </div>
+        <div class="col-sm-offset-1 col-sm-5">
+            <canvas id="canvas3" width="500" height="500"></canvas>
+        </div>
+    </div>
+</body>
+</html>

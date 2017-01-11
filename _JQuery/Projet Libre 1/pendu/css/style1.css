@@ -1,0 +1,73 @@
+﻿
+form {
+    background-color: palegreen;
+    margin-top: 5px;
+    padding-top: 10px;
+    width: 300px;
+    height: 40px;
+}
+.container{
+    background-color: palegreen;
+    border: 1px solid black;
+}
+
+#manque{
+    border: 3px solid red;
+    margin-left: 135px;;
+    height: 500px;
+    width: 500px;
+    font-size: 13px;
+}
+#canvas3 {
+    border: 3px solid red;
+}
+p {
+    width: 305px;
+    height: 40px;
+    padding: 4px;
+    font-size: 22px;
+    color: black;
+}
+strong {
+    color: darkblue;
+}
+span{
+    position : absolute;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    padding: 6px;
+    height: 30px;
+    width: 30px;
+}
+li {
+    display: inline-block;
+    font-weight : bold;
+    background-color:Aqua;
+    margin: 10px;
+    height:30px;
+    width: 30px;
+    padding: 5px;
+    border-bottom: 1px solid black;  /*à mettre dynamiquement an fonction de la longueur du mot*/
+    text-align: center;
+    }
+input {
+    border: 1px solid black;
+    background: #EEEEEE;
+    font-size: 20px;
+    height: 25px;
+    width: 250px;
+}
+
+input[type=button] {
+    border: 1px solid #CC3B1F;
+    background:black;
+    color: red;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    height: 25px;
+    width: 250px;
+}
+

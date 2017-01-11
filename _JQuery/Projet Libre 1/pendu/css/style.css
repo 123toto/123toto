@@ -1,0 +1,18 @@
+﻿/* Style par défaut de nos paragraphes
+(= état initial). */
+body {
+    font-family: arial, cursive;
+    font-size: 1.5em;
+}
+li {
+    display: inline-block;
+    height:30px;
+    width: 30px;
+    padding: 5px;
+    border-bottom: 1px solid black;  /*à mettre dynamiquement an fonction de la longueur du mot*/
+    text-align: center;
+    }
+[class*="col"] { 
+    margin-bottom: 20px; 
+
+    }

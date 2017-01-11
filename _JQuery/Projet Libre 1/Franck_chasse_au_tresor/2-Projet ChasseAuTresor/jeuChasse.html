@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chasse au trésor</title>
+    <!--  css pour BootStrap -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--  css principal du jeu -->
+    <link rel="stylesheet" href="css/jeuChasse.css">
+</head>
+<body>
+    <!--son d'ambiance-->
+    <audio src="sons/pirate.mp3" autoplay></audio>
+    <!--fin du son d'ambiance-->
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-lg-6 image">
+                <img class="coffreTresor" src="images/coffre-pirate.jpg" />
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <h1 class="jeuTitle">La chasse au Trésor</h1>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <!--Colonne de gauche-->
+            <div class="col-xs-12 col-lg-3 gauche">
+                <!--calcul des points-->
+                <div class="points">
+                    <p class="nbrepoint"> NIVEAU :</p>
+                    <p class="nbrepoint2"></p>
+                </div>
+                <!--compte a rebours-->
+                <div class="compteur">
+                    <p class="tmpsrestant"> TEMPS RESTANT : </p>
+                    <p class="time">00:00</p>
+                </div>
+            </div>
+            <!--colonne de droite-->
+            <div class="col-xs-12 col-lg-9 droite">
+                <!--touches du mot de passe-->
+                <div class="container-fluid motdepasse">
+                    <div class="row ligne">
+                        <div type="bouton" class="btn btn-default btn-circle" id="1">1</div>
+                        <div type="bouton" class="btn btn-default btn-circle" id="2">2</div>
+                        <div type="bouton" class="btn btn-default btn-circle" id="3">3</div>
+                    </div>
+                    <div class="row ligne">
+                        <div type="bouton" class="btn btn-default btn-circle" id="4">4</div>
+                        <div type="bouton" class="btn btn-default btn-circle" id="5">5</div>
+                        <div type="bouton" class="btn btn-default btn-circle" id="6">6</div>
+                    </div>
+                    <div class="row ligne">
+                        <div type="bouton" class="btn btn-default btn-circle" id="7">7</div>
+                        <div type="bouton" class="btn btn-default btn-circle" id="8">8</div>
+                        <div type="bouton" class="btn btn-default btn-circle" id="9">9</div>
+                    </div>
+                    <!--afficheur du mot de passe-->
+                    <div class = "row ligne">
+                    <p class = "afficheur"></p>
+                    <button type="button essai" class="btn btn-primary">Essai</button>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <!-- script pour le jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- script principal pour le jeu -->
+    <script src="js/jeuChasse.js"></script>
+    <!-- script pour le compte à rebours -->
+    <script src="js/compterebours.js" type="text/javascript"></script>
+    <!-- script pour entrer le mot de passe -->
+    <script src="js/motdepasse.js"></script>
+    <!-- script pour limiter le mot de passe -->
+    <script src="js/limiterMotDePasse.js"></script>
+</body>
+</html>
