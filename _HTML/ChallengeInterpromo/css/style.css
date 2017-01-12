@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica',serif;
+}
+
+.heading {
+    width: 100%;
+    background: url("file:///C:/_workspace/123toto/_HTML/ChallengeInterpromo_correctio/gallery/header.png") ;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.heading .layer {
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading .layer .barre_menu {
+    position: absolute;
+    width:100%;
+    top : 0;
+    left : 0;
+    padding: 3vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading .layer .barre_menu #logo {
+    width:40px;
+}
+.heading .layer .barre_menu #menu_desktop li{
+    display: inline-block;
+}
+.heading .layer .barre_menu #menu_mobile  {
+    display:none;
+}
+
+@media screen and (max-width:800px) {
+    .heading .layer .barre_menu #menu_mobile  {
+        display:flex !important;
+
+    }
+    .heading .layer .barre_menu #menu_desktop  {
+        display: none;
+    }
+    .heading .layer .barre_menu #menu-mobile img {
+        width:40px;
+        padding-left: 3vh;
+    }
+}
+
+.heading  .layer h1#texte_header {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20vh;
+}
+
+
+#bienvenue {
+
+}
