@@ -1,0 +1,13 @@
+En utilisant la console pour le rendu :
+
+OK - Fonction listant la suite de Fibonacci (1, 2, 3, 5, 8, 13,...) soit n3 = n2 + n1
+OK - Fonction permettant de calculer si une ann�e est bissextile sachant qu'une ann�e bissextile est multiple de 4 si pas multiple de 100 sauf quand multiple de 400.
+OK - Fonction FizzBuzz pour afficher soit fizz si multiple de 3, buzz si multiple de 5 ou fizzbuzz si multiple de 3 et de 5.
+OK - Fonction permettant de sortir les nombres premiers
+OK - Programme g�n�rant un nombre al�atoire entre 1 et 9) � deviner en indiquant trop haut ou trop bas ou trouv� � chaque essai.
+OK - Faire une boucle dessinant un triangle avec une lettre
+	x
+	xx
+	xxx
+	xxxx
+	xxxxx
