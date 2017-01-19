@@ -224,9 +224,31 @@ var getAllLetters = function(array) {
 }
 
 var swapKeysAndValues = function(object) {
+    for (var prop in object) {
+        var PropDevientVal = prop;
+        var ValdevientProp = object[prop];
+
+        delete prop ;
+        delete object[prop];
+
+        prop = ValdevientProp;
+        object[prop] = PropDevientVal;
+    }
+    return object;
 }
 
 var sumKeysAndValues = function(object) {
+    var entreeParPaires = Object.entries(object);
+    var tabloEntrees = [];
+    var tabloConcat = [];
+    for (var i = 0; i < entreeParPaires.length; i++) {
+        tabloEntrees = tabloConcat.concat(entreeParPaires[i]);
+        tabloConcat = tabloEntrees ;
+    }
+    var result = tabloEntrees.reduce(function(memo,val){
+        return parseInt(memo) + parseInt(val);
+    });
+    return result;
 }
 
 var removeCapitals = function(string) {
