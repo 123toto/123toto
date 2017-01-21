@@ -252,34 +252,113 @@ var sumKeysAndValues = function(object) {
 }
 
 var removeCapitals = function(string) {
+    for (var i = 0; i <= string.length; i++) {
+        var testMajuscule = string.substring(i,i+1);
+        var result;
+        if (testMajuscule < "A" || testMajuscule > "Z"){
+                if (result === undefined) {result = testMajuscule;}
+                else {result += testMajuscule;}
+        }
+    }
+    return result;
 }
 
 var roundUp = function(number) {
+    var nbreArrondi = Math.round(number);
+    if (number-nbreArrondi < 0.5){
+        nbreArrondi++;
+    }
+    return nbreArrondi;
 }
 
 var formatDateNicely = function(date) {
+    var jour = "00".substring((date.getDate().toString().length)) + date.getDate();
+    var mois = "00".substring(((date.getMonth()+1).toString().length)) + (date.getMonth()+1);
+
+    return jour + "/" + mois + "/" + date.getFullYear();
 }
 
 var getDomainName = function(string) {
+        var result;
+        for (var i = (string.indexOf("@")+1); i < (string.indexOf(".com")); i++) {
+            if (result === undefined) {result=string[i];}
+            else {result += string[i];}
+        }
+        return result;
 }
 
 var titleize = function(string) {
+    var debutPhrase;
+    var finPhrase;
+    for (var i = 0; i < string.length; i++) {
+        if (i==0){
+            string = string[i].toUpperCase() + string.substring(i+1);
+        }
+        if ((string[i-2] == ".") && (string[i-1] == " ") || (string.substring(i-4,i) == "the " || (string.substring(i-4,i) == "The "))){
+            finPhrase = i;
+            string = string.substring(0,finPhrase) + string[i].toUpperCase() + string.substring(i+1);
+        }
+    }
+    return string;
 }
 
+
 var checkForSpecialCharacters = function(string) {
+    var re = /[^A-Za-z0-9]/;
+    if (string.search(re) == -1) {
+        return false;
+    }
+    else {
+        return true;
+    }
 }
 
 var squareRoot = function(number) {
+    return Math.sqrt(number);
 }
 
 var factorial = function(number) {
+    var result =1;
+    for (var i = number; i > 0; i--) {
+        result *= i;
+    }
+    return result;
 }
 
 var findAnagrams = function(string) {
+    if (string.length === 1) {
+        return string;
+    }
+    else {
+        var result=[];
+        for (var i = 0; i < string.length; i++) {
+            var debut = string[0];
+            var nouv_string = findAnagrams(string.slice(1,string.length));
+            for (var j = 0; j < nouv_string.length; j++) {
+                result.push(debut + nouv_string[j]);
+            }
+            string = string.substr(1,string.length-1) + debut;
+        }
+        result.sort();
+        return result;
+    }
 }
 
 var convertToCelsius = function(number) {
+    number = Math.round(((5/9) * number )-(160/9));
+
+    return number;
 }
 
 var letterPosition = function(array) {
+    var result = [];
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].toUpperCase() == array[i]) {
+            result.push(array[i].charCodeAt() - 64);
+        }
+        else{
+            result.push(array[i].charCodeAt() - 96);
+        }
+    }
+    return result;
 }

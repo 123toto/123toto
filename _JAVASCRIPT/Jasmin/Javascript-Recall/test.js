@@ -1,14 +1,15 @@
-var removeCapitals = function(string) {
-    for (var i = 0; i < string.length; i++) {
-        var testMajuscule = string.substring(i,i+1);
-        var majuscule = testMajuscule.toUpperCase();
-        console.log(testMajuscule);
-        console.log(majuscule);
-        if (testMajuscule === majuscule) {
-            var string2 = string.slice(i,i+1);
+var letterPosition = function(array) {
+    var result = [];
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].toUpperCase() == array[i]) {
+            result.push(array[i].charCodeAt() - 64);
+        }
+        else{
+            result.push(array[i].charCodeAt() - 96);
         }
     }
-    console.log(string);
+    return result;
 }
 
-    removeCapitals('Hello Kitty');
+ letterPosition(['H', 'e', 'l', 'l', 'o', 'k', 'i', 't', 't', 'y']);
+//([8, 5, 12, 12, 15, 11, 9, 20, 20, 25])
