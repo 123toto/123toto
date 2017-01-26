@@ -1,0 +1,47 @@
+html,body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: white;
+}
+.calc {
+    background-color: #999999;
+    position: relative;
+    top:10vh;
+    margin: auto;
+    width: 300px;
+    height: 80vh;
+}
+.afficheur {
+    position: relative;
+    top : 5vh;
+    margin: auto;
+    background-color: green;
+    width : 250px;
+    height: 10vh;
+}
+.touches {
+    margin: 12vh auto;
+    padding : 4px;
+    background-color: silver;
+    width : 250px;
+    height: 51vh;
+}
+button {
+    margin: 2px;
+    position: relative;
+    width: 55px;
+    height: 12vh;
+    font-size: 35px;
+}
+#result {
+    position: relative;
+    width: 240px;
+    height: 8vh;
+    left : -6px;
+    text-align: right;
+    padding: 8px;
+    font-size: 40px;
+}

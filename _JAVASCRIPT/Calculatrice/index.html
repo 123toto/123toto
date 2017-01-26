@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculatrice ! </title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- <link rel="stylesheet" href="/css/bootstrap.css">
+    <script type="text/javascript" src="/js/bootstrap.css"></script> -->
+    <script type="text/javascript" src="js/calculatrice.js"></script>
+</head>
+<body>
+    <div class="calc">
+        <div class="afficheur" id="result">0
+            <!-- <input type="text" id="result" name="resultat" value="0" disabled="true"> -->
+        </div>
+        <div class="touches">
+            <button type="button" value="7" onclick="ecrireChiffre()" id="the7" name="7">7</button>
+            <button type="button" value="8" onclick="ecrireChiffre()" id="the8" name="8">8</button>
+            <button type="button" value="9" onclick="ecrireChiffre()" id="the9">9</button>
+            <button type="button" value="/" onclick="memoriserPremier(this.value)" id="the/">/</button>
+            <button type="button" value="4" onclick="ecrireChiffre();" id="the4">4</button>
+            <button type="button" value="5" onclick="ecrireChiffre();" id="the5">5</button>
+            <button type="button" value="6" onclick="ecrireChiffre();" id="the6">6</button>
+            <button type="button" value="*" onclick="memoriserPremier(this.value)" id="thex">x</button>
+            <button type="button" value="1" onclick="ecrireChiffre();" id="the1">1</button>
+            <button type="button" value="2" onclick="ecrireChiffre();" id="the2">2</button>
+            <button type="button" value="3" onclick="ecrireChiffre();" id="the3">3</button>
+            <button type="button" value="-" onclick="memoriserPremier(this.value)" id="the-">-</button>
+            <button type="button" value="0" onclick="ecrireChiffre();" id="the0">0</button>
+            <button type="button" value="." id="the.">.</button>
+            <button type="button" value="=" onclick="calculer()" id="the=">=</button>
+            <button type="button" value="+" onclick="memoriserPremier(this.value)" id="the+">+</button>
+        </div>
+    </div>
+</body>
+</html>
