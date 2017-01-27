@@ -1,0 +1,39 @@
+Projet : Programme - Ensemble globale
+
+
+Package : Ensemble de class
+
+
+Class : (un nom commun commencant par une majuscule)
+	Constructeurs (doit prendre le nom de la class) voir ci-dessous.
+	Propriétés => private String Race;	
+	Méthodes => public void SeDecrire() {...;}
+
+
+COnstructeur : Dans une class, appelé lors de l'instanciation.
+public class Animal {
+	private String Race;	
+	private String Nom;
+	private int Age;
+*	public Animal() {
+*		Race = "";
+*		Nom = "";
+*		Age = 0;}
+
+
+Instance : Instance de chien => Animal chien = new Animal();
+
+
+Objet : L'instancié chien est un objet =>  Animal chien = new Animal();
+
+
+Méthode : Fonction (verbe) => public String SeDecrire(int nb) {...;}
+
+
+Méthode Setters (assecsseur) :
+	public void setRace(String race) {
+		Race = race;
+	}
+
+Setter appelé par => chien1.setRace("Pittbull");
+
